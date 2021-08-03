@@ -1,4 +1,5 @@
-# interview
+# Vue Tailwind Form
+the basic form using tailwindcss
 
 ## Project setup
 ```
