@@ -1,9 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<div class="container mx-auto">
+  <div class="sm:w-3/4 md:w-2/3 w-3/4 mx-auto bg-gray-50 rounded-md py-10 px-4">
+    <router-view />
   </div>
-  <router-view/>
+</div>
 </template>
 
 <style lang="less">
@@ -13,18 +13,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

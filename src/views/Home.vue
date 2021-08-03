@@ -1,18 +1,11 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="Home">
+    <h1 class="header py-2 font-semibold">Hello There!</h1>
+    <p class="mb-8">Let's buy some items. It is going to take only a few steps</p>
+    <button class="bg-gray-900 text-white rounded-md py-3 px-14"
+    @click="onStart()">
+      Start
+    </button>
+  </section>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-};
-</script>
+<script src="@/composables/homeComposable.js" ></script>
